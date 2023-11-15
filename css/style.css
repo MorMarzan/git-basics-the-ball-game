@@ -23,6 +23,7 @@ h1 {
     cursor: pointer;
     border-radius: 50%;
     background-color: lightsalmon;
+    transition: 1s;
 
     font-size: 22px;
     font-weight: bold;
