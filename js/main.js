@@ -7,7 +7,7 @@ function onBallClick(elBall, maxDiameter) {
     const randNum = getRandomInt(20, 61)
 
     if (gOperator > 0) {
-        gBallSize = (gBallSize < maxDiameter) ? gBallSize += randNum : 100
+        gBallSize = (gBallSize + randNum < maxDiameter) ? gBallSize += randNum : 100
     } else {
        gBallSize = (gBallSize - randNum > 100) ? gBallSize -= randNum : 100 
     }
