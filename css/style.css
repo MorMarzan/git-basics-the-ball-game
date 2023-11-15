@@ -23,4 +23,7 @@ h1 {
     cursor: pointer;
     border-radius: 50%;
     background-color: lightsalmon;
+
+    font-size: 22px;
+    font-weight: bold;
 }
