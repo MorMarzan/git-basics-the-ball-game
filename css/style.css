@@ -14,7 +14,7 @@ h1 {
     height: 100px;
     width: 100px;
 
-    margin: 0 auto;
+    margin: 0 auto 20px;
 
     display: flex;
     justify-content: center;
@@ -22,9 +22,16 @@ h1 {
 
     cursor: pointer;
     border-radius: 50%;
-    background-color: lightsalmon;
     transition: 1s;
 
     font-size: 22px;
     font-weight: bold;
+}
+
+.ball1 {
+    background-color: lightsalmon;
+}
+
+.ball2 {
+    background-color: lightseagreen;
 }
