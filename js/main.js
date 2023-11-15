@@ -1,11 +1,16 @@
 'use strict'
 
 var gBallSize = 100
+var gOperator = 1
 
 function onBallClick(elBall, maxDiameter) {
     const randNum = getRandomInt(20, 61)
 
-    gBallSize = (gBallSize < maxDiameter) ? gBallSize += randNum : 100
+    if (gOperator > 0) {
+        gBallSize = (gBallSize < maxDiameter) ? gBallSize += randNum : 100
+    } else {
+       gBallSize = (gBallSize - randNum > 100) ? gBallSize -= randNum : 100 
+    }
 
     elBall.style.width = gBallSize + 'px'
     elBall.style.height = gBallSize + 'px'
@@ -41,4 +46,8 @@ function changeElSize(el, size) {
 
 function changeElBg(el, color) {
     el.style.backgroundColor = color
+}
+
+function onReduceBall() {
+    gOperator = -1
 }
